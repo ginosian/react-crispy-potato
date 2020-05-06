@@ -7,20 +7,34 @@ class App extends Component {
 
     constructor(props) {
         super(props);
-        console.log('[App.js] Constructor')
+        console.log('[App.js] Constructor');
     }
 
     static getDerivedStateFromProps(props, state){
-        console.log('[App.js] getDerivedStateFromProps', props)
+        console.log('[App.js] getDerivedStateFromProps', props);
         return state;
     }
 
     componentWillMount() {
-        console.log('[App.js] componentWillMount.')
+        console.log('[App.js] componentWillMount.');
     }
 
     componentDidMount() {
-        console.log('[App.js] componentDidMount.')
+        console.log('[App.js] componentDidMount.');
+    }
+
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        console.log('[App.js] shouldComponentUpdate.', nextProps, nextState, nextContext);
+        return true;
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('[App.js] getSnapshotBeforeUpdate.', prevProps, prevState);
+        // return null;
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('[App.js] componentDidUpdate.', prevProps, prevState, snapshot);
     }
 
     state = {
