@@ -19,13 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba808e7f-6922-4c07-8c4a-350a45736f04" name="Default Changelist" comment="85">
+    <list default="true" id="ba808e7f-6922-4c07-8c4a-350a45736f04" name="Default Changelist" comment="86">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cockpit/Cockpit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cockpit/Cockpit.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cockpit/Cockpit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cockpit/Cockpit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Persons/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Persons/Person/Person.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Persons/Persons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Persons/Persons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588757213677</updated>
-      <workItem from="1588757214897" duration="5551000" />
+      <workItem from="1588757214897" duration="7732000" />
     </task>
     <task id="LOCAL-00001" summary="84">
       <created>1588762240401</created>
@@ -86,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588767818101</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="86">
+      <created>1588769696730</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588769696730</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +114,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="84" />
     <MESSAGE value="85" />
-    <option name="LAST_COMMIT_MESSAGE" value="85" />
+    <MESSAGE value="86" />
+    <option name="LAST_COMMIT_MESSAGE" value="86" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1419" height="231" key="GridCell.Tab.0.bottom" timestamp="1588757281516">
@@ -130,9 +138,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/1440.23.960.681/0.23.1440.877@0.23.1440.877" timestamp="1588768371801" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1588767819799">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1588769698231">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/1440.23.960.681/0.23.1440.877@0.23.1440.877" timestamp="1588767819799" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/1440.23.960.681/0.23.1440.877@0.23.1440.877" timestamp="1588769698231" />
   </component>
 </project>
