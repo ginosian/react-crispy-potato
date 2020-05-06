@@ -34,6 +34,7 @@
     "react": "^16.0.0-rc.3",
     "react-dev-utils": "^4.0.1",
     "react-dom": "^16.0.0-rc.3",
+    "react-scripts": "1.0.13",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.5.9",
@@ -45,6 +46,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "eject": "node scripts eject",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
