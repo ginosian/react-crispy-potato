@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {Component, PureComponent} from 'react';
 import Person from "./Person/Person";
 
 
-class Persons extends Component {
+class Persons extends PureComponent {
 
     constructor(props) {
         super(props);
@@ -10,7 +10,7 @@ class Persons extends Component {
     }
 
     static getDerivedStateFromProps(props, state) {
-        console.log('[Persons.js] getDerivedStateFromProps', props);
+        console.log('[Persons.js] getDerivedStateFromProps');
         return state;
     }
 
@@ -18,22 +18,26 @@ class Persons extends Component {
         console.log('[Persons.js] componentDidMount.');
     }
 
-    shouldComponentUpdate(nextProps, nextState, nextContext) {
-        console.log('[Persons.js] shouldComponentUpdate.', nextProps, nextState, nextContext);
-        if (nextProps.persons !== this.props.persons) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    // shouldComponentUpdate(nextProps, nextState, nextContext) {
+    //     console.log('[Persons.js] shouldComponentUpdate.');
+    //     if (
+    //         nextProps.persons !== this.props.persons
+    //         || nextProps.changed !== this.props.changed
+    //         || nextProps.clicked !== this.props.clicked
+    //     ) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
 
     getSnapshotBeforeUpdate(prevProps, prevState) {
-        console.log('[Persons.js] getSnapshotBeforeUpdate.', prevProps, prevState);
+        console.log('[Persons.js] getSnapshotBeforeUpdate.');
         return null;
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log('[Persons.js] componentDidUpdate.', prevProps, prevState, snapshot);
+        console.log('[Persons.js] componentDidUpdate.');
     }
 
     componentWillUnmount() {
