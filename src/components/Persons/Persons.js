@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import Person from "./Person/Person";
 
 
-class Persons extends Component{
+class Persons extends Component {
 
     constructor(props) {
         super(props);
         console.log('[Persons.js] Constructor');
     }
 
-    static getDerivedStateFromProps(props, state){
+    static getDerivedStateFromProps(props, state) {
         console.log('[Persons.js] getDerivedStateFromProps', props);
         return state;
     }
@@ -20,7 +20,11 @@ class Persons extends Component{
 
     shouldComponentUpdate(nextProps, nextState, nextContext) {
         console.log('[Persons.js] shouldComponentUpdate.', nextProps, nextState, nextContext);
-        return true;
+        if (nextProps.persons !== this.props.persons) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     getSnapshotBeforeUpdate(prevProps, prevState) {
@@ -30,6 +34,10 @@ class Persons extends Component{
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         console.log('[Persons.js] componentDidUpdate.', prevProps, prevState, snapshot);
+    }
+
+    componentWillUnmount() {
+        console.log('[Persons.js] componentWillUnmount.');
     }
 
     render() {
